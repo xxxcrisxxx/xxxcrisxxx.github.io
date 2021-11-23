@@ -5,42 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card test</title>
+    <title>Cart 4 components</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <section class="card">
-            <div class="left_column">
-                <header>
-                    <h2 id="title_card">Gett<span class="span"> insights </span>that help<br>your business grow.</h2>
-                </header>
-                <section class="card_details">
-                    <p class="text_card">Discover the benefits of data analytics and make better decisions regarding
-                        revenue, customer
-                        experience, and overall efficiency. </p>
+    <header>
+        <h1>
+            <span class="title_ligth">Reliable, efficient delivery</span><br>
+            <span class="title_bold">Powered by Technology</span>
+        </h1>
+        <p class="subtitle">Our Artificial Intelligence powered tools use millions of project data<br>points to ensure that
+            your project is successful
+        </p>
+    </header>
+    <!-- container cards -->
+    <section class="container">
+        <!-- first column -->
+        <div class="first_column">
+            <section class="supervisor height_box">
+                <h3>Supervisor</h3>
+                <p>Monitors activity to identify project<br>roadblocks</p>
+                <img src="images/icon-supervisor.svg" alt="">
+            </section>
+        </div>
+        <!-- second column -->
+        <div class="second_column">
+            <section class="team_builder height_box">
+                <h3>Team Builder</h3>
+                <p>Scans our talent network to create the<br>optimal team for your project</p>
+                <img src="images/icon-team-builder.svg" alt="">
+            </section>
+
+            <div class="second_column">
+                <section class="karma height_box">
+                    <h3>Karma</h3>
+                    <p>Regularly evaluates our talent to ensure<br>quality</p>
+                    <img src="images/icon-karma.svg" alt="">
                 </section>
-                <footer class="footer_card">
-                    <div class="footer_text_stats">
-                        <p class="stats">10k+</p>
-                        <p class="text_card_footer">COMPANIES</p>
-                    </div>
-                    <div class="footer_text_stats">
-                        <p class="stats">314</p>
-                        <p class="text_card_footer">TEMPLATES</p>
-                    </div>
-                    <div class="footer_text_stats">
-                        <p class="stats">12m+</p>
-                        <p class="text_card_footer">QUERIES</p>
-                    </div>
-                </footer>
             </div>
-            <div class="rigth_column">
-                
-            </div>
-        </section>
-    </div>
+
+        </div>
+
+        <!-- three column -->
+        <div class="three_column">
+            <section class="calculator height_box">
+                <h3>Calculator</h3>
+                <p>Uses data from past projects to provide<br>better delivery estimates</p>
+                <img src="images/icon-calculator.svg" alt="">
+            </section>
+        </div>
+    </section>
 </body>
 
 </html>
