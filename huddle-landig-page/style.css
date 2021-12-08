@@ -46,7 +46,7 @@ height: 80vh;
     background-color: #e979df;
     color: #fff;
 }
-/* footer{
+footer{
     padding-bottom: 2rem;
 }
 .social-icons {
@@ -64,12 +64,10 @@ height: 80vh;
 }
 .fa-facebook-f{
     padding: 10px 13px;
-} */
+}
 /* resposive design */
 @media (max-width: 776px){
-   footer {
-       background-color: black;
-   }
+  
    .content {
      padding-bottom: 2rem;
         display: grid;
@@ -78,7 +76,25 @@ height: 80vh;
         align-items: center;
         gap: 20px;
      }
-    body{
-       
-    }
+   
 }
+
+@media (max-width: 600px){
+  
+    .content {
+      padding-bottom: 2rem;
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: auto;
+         align-items: center;
+         gap: 5px;
+         text-align: center;
+      }
+      body{
+        padding: 10px 40px;
+      }
+
+      .social-icons{
+        justify-content: center;
+      }
+ }
