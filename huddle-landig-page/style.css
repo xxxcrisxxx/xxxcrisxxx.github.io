@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0px 100px;
+    background-color: #674baf;
+    background-image: url(images/bg-desktop.svg);   
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif; 
+    color: #fff;
+}
+header{
+padding-top: 2rem;
+}
+.logo-image{
+    width: 150px;
+}
+.mockup-image{
+    width: 100%;
+}
+.content {
+height: 80vh;
+ padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 50px;
+ }
+
+.button {
+    text-decoration: none;
+    background-color: #fff;
+    margin: 1rem 0;
+    display: inline-block;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 40px;
+    color: #674baf;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px #00000060;
+}
+.button:hover{
+    background-color: #e979df;
+    color: #fff;
+}
+footer{
+    padding-bottom: 2rem;
+}
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.fab {
+    color: #fff;
+    font-weight: 400;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 10px 10px;
+}
+.fa-facebook-f{
+    padding: 10px 13px;
+}
+/* resposive design */
+@media (max-width: 776px){
+  
+   .content {
+     padding-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        gap: 20px;
+     }
+   
+}
+
+@media (max-width: 600px){
+  
+    .content {
+      padding-bottom: 2rem;
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: auto;
+         align-items: center;
+         gap: 5px;
+         text-align: center;
+      }
+      body{
+        padding: 10px 40px;
+      }
+
+      .social-icons{
+        justify-content: center;
+      }
+ }
