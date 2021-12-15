@@ -83,7 +83,7 @@ padding-bottom: 6.5rem;
         background-image: url(images/image-header-desktop.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 100vh;
+        min-height: 50vh;
     }
     .left-card:nth-child(1){
         order: 2;
