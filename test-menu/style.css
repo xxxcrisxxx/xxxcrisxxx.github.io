@@ -86,13 +86,13 @@ height: 3px;
 margin: 3px;
 transition: all 0.5s;
     }
-    #menu__icon--mobile:hover .dos{
+    #menu__icon--mobile:active .dos{
 opacity: 0;
     }
-    #menu__icon--mobile:hover .uno{
+    #menu__icon--mobile:active .uno{
         transform: rotate(45deg) translate(5px, 5px);
     }
-    #menu__icon--mobile:hover .tres{
+    #menu__icon--mobile:active .tres{
         transform: rotate(-45deg) translate(8px, -7px);
     }
     .menu__content-mobile{
