@@ -3,52 +3,73 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
-    padding: 0px 100px;
-    background-color: #674baf;
-    background-image: url(images/bg-desktop.svg);   
+html{
+    font-size: 62.50%;
+}
+body{
+    background: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
     background-repeat: no-repeat;
-    font-family: 'Poppins', sans-serif; 
-    color: #fff;
+    background-size: cover;
+    background-position: -70px 0px;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
 }
-header{
-padding-top: 2rem;
+.header__container{
+    padding: 4.5rem 6.5rem;
+    font-family: 'Poppins', sans-serif;
 }
-.logo-image{
-    width: 150px;
+.header__container--logo{
+    width: 180px;
 }
-.mockup-image{
+/* main styles */
+.main__container{
+    padding: 4.5rem 6.5rem;
+}
+.sections {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+.row__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    justify-content: center;
+}
+.img__mockup{
     width: 100%;
 }
-.content {
-height: 80vh;
- padding-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    align-items: center;
-    gap: 50px;
- }
-
-.button {
-    text-decoration: none;
-    background-color: #fff;
-    margin: 1rem 0;
-    display: inline-block;
-    border-radius: 30px;
-    border: none;
-    padding: 10px 40px;
-    color: #674baf;
-    font-weight: 500;
-    box-shadow: 0px 0px 10px #00000060;
+h1{ 
+    color: #fff;
+    font-size: 4.0rem;
 }
-.button:hover{
-    background-color: #e979df;
+p{
     color: #fff;
 }
-footer{
-    padding-bottom: 2rem;
+.btn__register{
+    background-color: #fff;
+    color:hsl(257, 40%, 49%);
+    border-radius: 50px;
+    padding: 12px 60px 12px 60px;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 2px 2px 8px 2px rgb(0 0 0 / 39%);
 }
+.btn__register:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+/* footer styles */
+footer{
+    padding-right: 6.5rem;
+    padding-bottom: 4rem;
+}
+
 .social-icons {
     display: flex;
     flex-direction: row;
@@ -65,36 +86,41 @@ footer{
 .fa-facebook-f{
     padding: 10px 13px;
 }
-/* resposive design */
-@media (max-width: 776px){
-  
-   .content {
-     padding-bottom: 2rem;
+/* responsive tablets */
+@media (max-width: 1024px){
+    .sections {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        align-items: center;
-        gap: 20px;
-     }
-   
+        gap: 30px;
+    }
+    .img__mockup{
+        width: 80%;
+        margin: auto;
+    }
 }
-
-@media (max-width: 600px){
-  
-    .content {
-      padding-bottom: 2rem;
-         display: grid;
-         grid-template-columns: 1fr;
-         grid-template-rows: auto;
-         align-items: center;
-         gap: 5px;
-         text-align: center;
-      }
-      body{
-        padding: 10px 40px;
-      }
-
-      .social-icons{
-        justify-content: center;
-      }
- }
+/* responsive mobi;e */
+@media (max-width: 776px){
+    .img__mockup{
+        width: 100%;
+        margin: auto;
+    }
+    .header__container{
+        padding: 2.5rem 4.5rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    .main__container {
+        padding: 3.5rem 4.5rem;
+    }
+    .row__left{
+        text-align: center;
+    }
+    .btn__register{
+        margin: 0 auto;
+    }
+    footer{
+        padding: 4rem 0;
+    }
+    .social-icons {
+     justify-content: center;
+    }
+}
